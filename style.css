@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--off-white);
+    font-size: 16px;
+    
+}
+
+.header {
+    padding: 30px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    list-style: none;
+    margin-right: -20px;
+}
+
+.nav .list .item a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    cursor: pointer;
+}
+
+.nav .list .item a:hover {
+    color: var(--soft-orange);
+}
+
+.menu{
+    display: none;
+    width: 40px;
+    height: 24px;
+}
+
+.menu .menu-list {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+/* content */
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.content-left {
+    padding-left: 5px;
+    padding-right: 24px;
+    width: 66.6667%;
+}
+
+.content-left .img img{
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+.text-content {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding-top: 24px;
+    width: 100%;
+}
+
+.text-content .titile-content {
+    width: 50%;
+}
+
+.text-content .titile-content h1 {
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--very-dark-blue);
+}
+
+.desc-content {
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.desc-content .btn {
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--off-white);
+    background-color: var(--soft-red);
+    outline: none;
+    border: none;
+    width: 200px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.desc-content .btn:hover {
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
+    transition: all linear .3s;
+}
+
+.slide-bar {
+    padding: 20px;
+    width: 33.3334%;
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
+}
+
+.heading h1 {
+    color: var(--soft-orange);
+    font-size: 38px;
+    padding-bottom: 28px;
+}
+
+.slide-bar .new-content {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.slide-bar .new-content .titile{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.slide-bar .new-content .titile:hover {
+    color: var(--soft-orange);
+}
+
+.slide-bar .new-content .question {
+    color: var(--dark-grayish-blue);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.slide-bar .new-content hr {
+    border-color: var(--dark-grayish-blue);
+}
+
+/* footer */
+
+.container-footer {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.footer-column-8 {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    width: 66.6667%;
+}
+
+.column-1, .column-2 {
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.footer-column-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    width: 33.3334%;
+}
+
+.footer-review {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-review img {
+    width: 120px;
+    height: 120px;
+    padding-right: 16px;
+}
+
+.desc-review h2 {
+    color: var(--grayish-blue);
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.desc-review .desc-review-heading {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.desc-review .desc-review-heading:hover {
+    color: var(--soft-red);
+}
+
+.desc-review .desc-review-question {
+    color: var(--dark-grayish-blue);
+    line-height: 20px;
+    font-size: 16px;
+    padding-top: 10px;
+}
